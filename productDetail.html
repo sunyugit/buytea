@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>产品详情页</title>
+    <link rel="stylesheet" href="css/bt_index.css" />
+    <link rel="stylesheet" href="css/productDetail.css" />
+</head>
+<body>
+<!--异步请求头部-->
+<div id="header"><img src="img/loading.gif" alt=""/></div>
+    <div id="main">
+            <!--产品导航面包屑-->
+        <div id="bread-crumb">
+            <a href="#"><b>白茶</b></a>
+            <span>&gt;</span>
+            <a href="#"><b>白牡丹</b></a>
+            <span>&gt;</span>
+            <a href="#"><b>2015年中茶白茶特级福鼎白茶白牡丹白茶饼(60周年)</b></a>
+        </div>
+                <!--产品详情-->
+        <div id="product_intro">
+                <!--放大镜效果-->
+            <div id="preview">
+                <div id="mediumDiv">
+                    <img id="mImg" src="img/productDetailImg/product-s1-m.jpg"/>
+                    <div id="mask"></div>
+                    <div id="superMask"></div>
+                </div>
+                <div id="largeDiv"></div>
+                <h1>
+                    <a class="backward_disabled">&lt;</a>
+                    <a class="forward">&gt;</a>
+                    <ul id="icon_list">
+                        <li><img src="img\productDetailImg\product-s1.jpg" /></li>
+                        <li><img src="img\productDetailImg\product-s2.jpg" /></li>
+                        <li><img src="img\productDetailImg\product-s3.jpg" /></li>
+                        <li><img src="img\productDetailImg\product-s4.jpg" /></li>
+                        <li><img src="img\productDetailImg\product-s1.jpg" /></li>
+                        <li><img src="img\productDetailImg\product-s2.jpg" /></li>
+                        <li><img src="img\productDetailImg\product-s3.jpg" /></li>
+                        <li><img src="img\productDetailImg\product-s4.jpg" /></li>
+                    </ul>
+                </h1>
+            </div>
+
+            <!--右侧的文字说明-->
+            <div class="font_intro">
+                <div class="header">
+                    <h1>2015年中茶白茶特级福鼎白茶白牡丹白茶饼</h1>
+                    <p>此产品为海堤60周年纪念白茶饼，白毫显露，滋味清和，回味甘甜</p>
+                </div>
+
+                <div class="content">
+                    <p><b>商品编号：</b><span>100000545</span></p>
+                    <p><b>市&nbsp;&nbsp;场&nbsp;&nbsp;价：</b><s>¥420.00</s></p>
+                    <p><b>售&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价：</b><span class="sale_price">¥338.00</span></p>
+                    <p><b>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销：</b>
+                        <span>距促销活动结束<strong id="LeftTime"></strong></span>
+                    </p>
+                    <p><b>送&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;至：</b>
+                        <span class="address">广东省广州市天河区 <i></i></span>
+                        <span>有货</span></p>
+
+                   <p class="count">
+                       <b>购买数量：</b>
+                        <span class="plus"></span>
+                        <input type="text" value="1"/>
+                        <span class="minutes"></span>件
+                       <i>目前还有<strong>49</strong>件库存</i>
+                   </p>
+
+                    <ul>
+                        <li>销量: <span>1024</span>件</li>
+                        <li>累计评价: <span>888</span>条</li>
+                        <li>送茶界积分: <span>666</span>分</li>
+                    </ul>
+
+                    <div class="action">
+                        <button class="buy">立即购买</button>
+                        <button class="store">加入购物车</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--猜你喜欢-->
+            <div class="guess_like">
+                <p>猜您喜欢</p>
+                <ul>
+                    <li>
+                        <p></p>
+                        <h3>¥45.00</h3>
+                        <h4 class="info">2016年中茶 广西梧州窖藏六堡红星砖茶 5708 口粮茶500g... </h4>
+                    </li>
+                    <li>
+                        <p></p>
+                        <h3>¥45.00</h3>
+                        <h4 class="info">2016年中茶 广西梧州窖藏六堡红星砖茶 5708 口粮茶500g... </h4>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="product_introDetail">
+                <!--热销商品-->
+            <div class="guess_like">
+                <p>热销商品</p>
+                <ul>
+                    <li>
+                        <p></p>
+                        <h3>¥45.00</h3>
+                        <h4 class="info">2016年中茶 广西梧州窖藏六堡红星砖茶 5708 口粮茶500g... </h4>
+                    </li>
+                    <li>
+                        <p></p>
+                        <h3>¥45.00</h3>
+                        <h4 class="info">2016年中茶 广西梧州窖藏六堡红星砖茶 5708 口粮茶500g... </h4>
+                    </li>
+                    <li>
+                        <p></p>
+                        <h3>¥45.00</h3>
+                        <h4 class="info">2016年中茶 广西梧州窖藏六堡红星砖茶 5708 口粮茶500g... </h4>
+                    </li>
+                    <li>
+                        <p></p>
+                        <h3>¥45.00</h3>
+                        <h4 class="info">2016年中茶 广西梧州窖藏六堡红星砖茶 5708 口粮茶500g... </h4>
+                    </li>
+                </ul>
+            </div>
+
+                <!--产品详情、产品评价、购买咨询、售后服务-->
+            <div class="product_msg">
+                <ul>
+                    <li class="active detail">商品详情</li>
+                    <li class="comment">商品评价(49639)</li>
+                    <li class="info">购买咨询</li>
+                    <li class="service">售后服务</li>
+                </ul>
+
+                <!--商品详情-->
+                <div class="goods_detail">
+                    <p><img src="img/productDetailImg/product-s1-l.jpg" alt=""/></p>
+                    <p><img src="img/productDetailImg/product-s2-l.jpg" alt=""/></p>
+                    <p><img src="img/productDetailImg/product-s3-l.jpg" alt=""/></p>
+                    <p><img src="img/productDetailImg/product-s4-l.jpg" alt=""/></p>
+                </div>
+
+                <!--商品评价-->
+                <div class="goods_comment">
+                    <div class="goods_info_comment">
+                        <h1 class="main_tabs">商品评价</h1>
+                        <div class="m_content">
+                            <div class="rate">
+                                <span>97</span><b>%</b>
+                                <p>好评度</p>
+                            </div>
+                            <div class="percent">
+                                <dl>
+                                    <dt>好评(<span>97%</span>)</dt>
+                                    <dd><p style="width:97px;"></p></dd>
+                                </dl>
+                                <dl>
+                                    <dt>中评(<span>2%</span>)</dt>
+                                    <dd><p style="width:2px;"></p></dd>
+                                </dl>
+                                <dl>
+                                    <dt>差评(<span>1%</span>)</dt>
+                                    <dd><p style="width:1px;"></p></dd>
+                                </dl>
+                            </div>
+                            <div class="buyers">
+                                <p>买家印象：</p>
+                                <ul>
+                                    <li>比实体店便宜<span>(8450)</span></li>
+                                    <li>味道不错<span>(6931)</span></li>
+                                    <li>汤水颜色不错<span>(5034)</span></li>
+                                    <li>质量好<span>(5003)</span></li>
+                                    <li>包装精良<span>(4834)</span></li>
+                                    <li>售后服务好<span>(4712)</span></li>
+                                </ul>
+                            </div>
+                            <div class="btns">
+                                您可对已购商品进行评价
+                                <a class="btn_comment" href="#">发评价拿积分</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--评价详细-->
+                    <div id="comment_list">
+                        <ul class="main_tabs">
+                            <li class="active">全部评价(49639)</li>
+                            <li>好评(48232)</li>
+                            <li>中评(992)</li>
+                            <li>差评(415)</li>
+                            <li>有晒单的评价(962)</li>
+                        </ul>
+
+                        <!--全部评价-->
+                        <div id="comment_0" >
+                            <div class="comment_item" >
+                                <ul>
+                                    <li><a href="#"><img src="img/user_01.jpg" /></a></li>
+                                    <li>kkngj2008 </li>
+                                    <li><b>金牌会员</b><span>广东</span></li>
+                                </ul>
+                                <div>
+                                    <div class="topic">
+                                        <p>三星好评</p>
+                                        <a href="#">2014-08-12 19:01</a>
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td>标签：</td>
+                                            <td class="comment_tag">
+                                                <span>包装好</span>
+                                                <span>汤水清亮</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>心得：</td>
+                                            <td>味道清香...价格也比较公道</td>
+                                        </tr>
+                                        <tr>
+                                            <td>用户晒单：</td>
+                                            <td class="comment_show">
+                                                <a href="#"><img src="img/dark_tea/dark03_sm.png"/></a>
+                                                <a href="#"><img src="img/dark_tea/dark03_sm.png"/></a>
+                                                <a href="#"><img src="img/dark_tea/dark03_sm.png"/></a>
+                                                共<b>3</b>张图片<a href="#">查看晒单&gt;</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>购买日期：</td>
+                                            <td>2014-08-11</td>
+                                        </tr>
+                                    </table>
+                                    <p class="btns">
+                                        <a href="#">有用(3)</a>
+                                        <a href="#">回复(0)</a>
+                                    </p>
+                                </div>
+                                <div class="corner"></div>
+                            </div>
+                            <div class="comment_item" >
+                                <ul>
+                                    <li><a href="#"><img src="img/user_01.jpg" /></a></li>
+                                    <li>kkngj2008 </li>
+                                    <li><b>金牌会员</b><span>广东</span></li>
+                                </ul>
+                                <div>
+                                    <div class="topic">
+                                        <p>三星好评</p>
+                                        <a href="#">2014-08-12 19:01</a>
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td>标签：</td>
+                                            <td class="comment_tag">
+                                                <span>包装好</span>
+                                                <span>汤水清亮</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>心得：</td>
+                                            <td>味道清香...价格也比较公道</td>
+                                        </tr>
+                                        <tr>
+                                            <td>用户晒单：</td>
+                                            <td class="comment_show">
+                                                <a href="#"><img src="img/dark_tea/dark03_sm.png"/></a>
+                                                <a href="#"><img src="img/dark_tea/dark03_sm.png"/></a>
+                                                <a href="#"><img src="img/dark_tea/dark03_sm.png"/></a>
+                                                共<b>3</b>张图片<a href="#">查看晒单&gt;</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>购买日期：</td>
+                                            <td>2014-08-11</td>
+                                        </tr>
+                                    </table>
+                                    <p class="btns">
+                                        <a href="#">有用(3)</a>
+                                        <a href="#">回复(0)</a>
+                                    </p>
+                                </div>
+                                <div class="corner"></div>
+                            </div>
+                        </div>
+                        <!--可能还会有其他评论分类：比如“好评”等-->
+
+                        <!--页码-->
+                        <div class="pager">
+                            <a class="comment_show_all" href="#">[查看全部评价]</a>
+                            <div id="pages">
+                                <a class="current">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">....</a>
+                                <a href="#">3421</a>
+                                <a href="#">下一页</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+<!--异步请求尾部-->
+<div id="footer"><img src="img/loading.gif" alt=""/></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/common.js"></script>
+<script src="js/productDetail.js"></script>
+</body>
+</html>

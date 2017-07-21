@@ -1,0 +1,157 @@
+#title{
+    width:1200px;
+    min-height:30px;
+    margin:0 auto;
+    margin-top:20px;
+}
+#title p{float:left;
+        width:20px;
+        height:19px;
+        margin:4px 10px 0 10px;
+}
+#cart{
+    border:1px solid #DEDEDE;
+    border-top:2px solid #aaa;
+    border-collapse:collapse;
+    width:1200px;
+    margin:0 auto;
+    margin-bottom:50px;
+}
+#cart td,#cart th{
+    min-height:40px;
+    line-height:40px;
+    border-top:1px solid #f1f1f1;
+    border-bottom:1px solid #f1f1f1;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    padding:5px;
+    vertical-align:middle;
+    text-align:center;
+}
+#cart thead input{
+    vertical-align: middle;
+}
+#cart thead tr{
+    background:#F2F2F2;
+}
+#cart tbody input[type='checkbox']{
+    float:left;
+    margin-left:15px;
+}
+#cart tbody img {
+    margin-top:15px;
+    width:50%;
+}
+#cart a{
+    text-decoration:none;
+    color:#666;
+}
+#cart a:hover {
+    color:#E4393C;
+}
+#cart tbody td span{
+    font-weight: bold;
+}
+#cart tbody td b{
+    color:#f00;
+}
+/********设置按钮中的input样式********/
+#cart tbody td input[type='text']{
+    border:1px solid #aaa;
+    height:20px;
+    width:40px;
+    margin:0 10px;
+    text-align: center;
+}
+#cart tbody td button{
+    border:1px solid #6C6C6C;
+    height:20px;
+    width:20px;
+    padding:0;
+    background-color: #fff;
+    box-sizing:content-box;
+}
+
+
+#cart_footer{
+    position: fixed;
+    width:100%;
+    height:60px;
+    bottom:0;
+    left:0;
+    background-color: #fff;
+    box-shadow: 0 -1px 8px rgba(0,1,1,.8);
+    z-index:100;
+    text-align: center;
+}
+
+#cart_footer>div.buy{
+    position: absolute;
+    right: 380px;
+    bottom: 0;
+    width:200px;
+    height:50px;
+    line-height: 50px;
+}
+
+#cart_footer>div.delete{
+    position: absolute;
+    left: 430px;
+    bottom: 0;
+    height:50px;
+    line-height: 50px;
+}
+#cart_footer>div.delete button{
+   margin: 0 15px;
+}
+#cart_footer>div.buy>span{
+    font-size: 18px;
+    color: #e4393c;
+    font-weight:bold;
+}
+
+#cart_footer button{
+    float: left;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    background-color:#55990A;
+    border: 0;
+    border-radius:5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/**transition：对图片添加动画*/
+#cart tbody img{
+    transition: transform 0.5s linear;
+}
+
+/*鼠标悬停，图片变大1.1倍*/
+#cart tbody img:hover{
+    transform:scale(1.1);
+    cursor: po;
+}
+
+#cart:hover::before{
+    transition: left 3s;
+    left: 1300px;
+}
+#cart:before{
+    /*border:1px solid red;*/
+    content: "";
+    position: absolute;
+    width: 80px;
+    height:1000px;
+    top: 350px;
+    left: -150px;
+    overflow: hidden;
+    background-image: linear-gradient(to right,rgba(255,255,255,0.2) 0,rgba(255,255,255,0.8) 50%,rgba(255,255,255,0.2) 100%);
+    transform: skewX(-25deg);
+}

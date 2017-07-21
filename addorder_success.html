@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>买茶网-订单成功页</title>
+    <link rel="icon" href="img/tea.png">
+    <link rel="stylesheet" href="css/bt_index.css" />
+    <style>
+        #main{margin:20px auto;padding:10px;}
+        #main p{margin:15px; font-size: 16px;}
+        #main p b{margin-right:15px;}
+        #main p a{display:inline-block;margin:0 15px;}
+    </style>
+</head>
+<body>
+<!--异步请求头部-->
+<div id="header"><img src="img/loading.gif" alt=""/></div>
+
+<div id="main">
+        <h2>生成订单成功！</h2>
+        <p>订单号为：<b style="color:#f00;"></b>
+        </p>
+    <p >点击<a href="user_center.html">用户中心</a>可以查看所有订单！</p>
+</div>
+
+<!--异步请求尾部-->
+<div id="footer"><img src="img/loading.gif"/></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/common.js"></script>
+<script src="js/adderorder_success.js"></script>
+</body>
+</html>

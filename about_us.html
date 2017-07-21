@@ -1,0 +1,74 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>买茶网-关于公司</title>
+<link rel="icon" href="img/tea.png">
+<link rel="stylesheet" href="css/bt_index.css" />
+<style type="text/css">  
+	#container{height:600px;
+						 width:800px;
+		         border:1px solid #6C6C6C;
+		         margin:20px auto;
+	}
+	.main{
+		margin: 20px auto;
+		width: 800px;
+	}
+</style>  
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=njqvTm5UR24I177eV4YGRGX6AQNMEtWG">
+//v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"
+//v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=您的密钥&callback=initialize"
+</script>
+</head>  
+ 
+<body>  
+
+		 <!--异步请求头部-->
+		<div id="header"><img src="img/loading.gif" alt=""/></div>
+
+		<div class="main">
+			<h1>使用百度地图进行地理定位</h1>
+				<div id="container"></div>
+		</div>
+
+
+
+		<!--异步请求尾部-->
+		<div id="footer"><img src="img/loading.gif" alt=""/></div>
+
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/common.js"></script>
+		<script type="text/javascript">
+
+		var map = new BMap.Map("container");          // 创建地图实例
+		var point = new BMap.Point(116.404, 39.915);  // 创建点坐标
+		map.centerAndZoom(point, 12);                 // 初始化地图，设置中心点坐标和地图级别
+
+		window.setTimeout(function(){
+				map.panTo(new BMap.Point(116.327146,39.901127));
+		}, 2000);
+
+		map.addControl(new BMap.NavigationControl()); //地图平移缩放控件，PC端默认位于地图左上方，它包含控制地图的平移和缩放的功能。移动端提供缩放控件，默认位于地图右下方
+		map.addControl(new BMap.ScaleControl()); //比例尺控件，默认位于地图左下方，显示地图的比例关系
+		map.addControl(new BMap.OverviewMapControl());//缩略地图控件，默认位于地图右下方，是一个可折叠的缩略地图
+		map.addControl(new BMap.MapTypeControl()); //地图类型控件，默认位于地图右上方
+		map.setCurrentCity("北京"); // 仅当设置城市信息时，MapTypeControl的切换功能才能可用
+
+		var marker = new BMap.Marker(point);        // 创建标注
+		map.addOverlay(marker);                     // 将标注添加到地图中
+		marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+
+		var opts = {
+		 width : 60,     // 信息窗口宽度
+		 height: 20,     // 信息窗口高度
+		 title : "天安门地址："  // 信息窗口标题
+		}
+		var infoWindow = new BMap.InfoWindow("北京市东城区东长安街", opts);  // 创建信息窗口对象
+		map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
+		</script>
+
+		
+</body>  
+</html>

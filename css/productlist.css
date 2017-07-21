@@ -1,0 +1,240 @@
+#main{margin:30px auto;
+      width:1214px;
+}
+#main:after{content: "";display:table;clear: both;}
+#main div.affix{width:210px;
+                min-height:50px;
+                text-align: center;
+                float:left;
+}
+.productlist{
+  width:1000px;
+  min-height:1000px;
+  float:left;
+  box-sizing:border-box;
+}
+
+
+.productlist header{
+  height:35px;
+  line-height:35px;
+  background:#F1F1F1;
+  padding: 6px 8px;
+  border: 1px solid #E7E3E7;
+}
+.productlist header ul li {
+  float:left;
+  height:25px;
+}
+.productlist header ul li a.curr {
+  background: #55990A;
+  color: #FFF;
+  border-color: #55990A;
+}
+
+.productlist header ul li a {
+  display: inline-block;
+  padding: 5px 10px;
+  height: 25px;
+  line-height:25px;
+  border: 1px solid #aaa;
+  color:#333;
+  text-decoration: none;
+}
+
+.productlist header ul li a:hover {
+  font-weight:bold;
+}
+
+.productlist header>ol {
+  width:80px;
+  height:35px;
+  margin-right:15px;
+  float:right;
+}
+.productlist header>ol>li {
+  float:left;
+  border:1px solid #aaa;
+  padding:0 10px;
+}
+.productlist header>ol>li:last-child {
+  background:#fff;
+}
+
+#plist ul{
+  width:990px;
+  min-height:820px;
+}
+#plist ul:after{content: "";
+                display:table;
+                clear:both;}
+#plist ul>li{
+  width:235px;height:380px;
+  float:left;
+  margin:5px;
+}
+
+
+#plist ul li img {
+  width:100%;
+  vertical-align:middle;
+}
+#plist ul li>p {
+  display: inline-block;
+  line-height:15px;
+  height:22px;
+  width:50%;
+  overflow:hidden;
+  color:#ff0000;
+  font-size:15px;
+  font-weight:bold;
+  margin:10px 0 0 8px;
+}
+#plist ul li span{
+  line-height:12px;
+  display: inline-block;
+  height:22px;
+  width:40%;
+  overflow:hidden;
+  font-size:12px;
+  margin:10px 0 0 8px;
+}
+#plist ul li h1{
+  padding:5px;
+  max-height:40px;
+  overflow:hidden;
+}
+#plist ul li h1 a{
+  font-weight:normal;
+  font-size:12px;
+}
+#plist ul li div {
+  margin-left:10px;
+  margin-top:10px;
+}
+#plist ul li div a{
+  float: left;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #DDD;
+  padding-right:3px;
+  padding-left:25px;
+  position: relative;
+  background: #fff;
+  color:#333;
+}
+
+#plist ul li div a i {
+  position:absolute;
+  left:5px;
+  top:5px;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #ccc;
+  font-size: 0;
+}
+#plist ul li div a.p-operate  i {
+  width: 18px;
+  height: 18px;
+  border:none;
+}
+
+#plist ul li div a.addcart {
+  padding-left:25px;
+  width: 70px;
+  text-align:center;
+  color: #e4393c;
+  position: relative;
+}
+
+#plist ul li div a.addcart img{
+  width: 25px;
+  height:22px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+/*****************页码样式***************************/
+.pager {
+  margin:15px 30px;
+  float:right;
+}
+.pager li{
+  display: inline-block;
+  border: 1px solid #aaa;
+  background:#f5f5f5;
+  padding:6px 12px;
+  font-weight: bold;
+  margin:2px;
+}
+.pager li a{ text-decoration:none;}
+.pager li.active{
+  border: 1px solid transparent;
+  background: #5fc504;
+}
+
+.pager li.disable{
+  border:1px solid transparent;
+}
+.pager li.active a{
+  color:#fff;
+  font-weight: bold;
+}
+
+/***登录模态框样式***/
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0, .7);
+  z-index:1000;
+  display:block;
+}
+.modal-dialog {
+  width: 370px;
+  margin: 200px auto;
+}
+.modal-content {
+  background: #fff;
+  border: 1px solid #4E9D34;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #4E9D34;
+  padding: 16px 12px;
+}
+.modal-content h4 {
+  font-size: 1.5em;
+  width:75px;
+  margin:0 auto;
+}
+.modal-content .alert {
+  margin: 15px 0;
+  border: 1px solid #4E9D34;
+  background: #efe;
+  color:#4E9D34;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 2px;
+}
+.modal-content input {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 6px 0;
+  line-height: 2em;
+  border: 1px solid #4E9D34;
+  border-radius: 2px;
+  padding: 2px 6px;
+}
+
+
+/*为产品图片添加动画效果*/
+#plist img:hover{
+  transform: scale(0.9);
+}
+
+#plist img{
+  transition: transform 0.5s linear;
+}

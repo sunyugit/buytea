@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>买茶网-订单页</title>
+    <link rel="icon" href="img/tea.png">
+    <link rel="stylesheet" href="css/bt_index.css" />
+    <link rel="stylesheet" href="css/addorder.css" />
+</head>
+<body>
+<!--异步请求头部-->
+<div id="header"><img src="img/loading.gif" alt=""/></div>
+
+<div id="main">
+    <div class="add-order">
+        <header class="checkout-tit">
+            <span class="tit-txt">填写并核对订单信息</span>
+        </header>
+        <section class="checkout-steps">
+            <div class="step-tit">
+                <h3>收货人信息</h3>
+
+                <form id="form-order"></form>
+
+                <div class="extra-r">
+                    <a href="#none" class="ftx-05">新增收货地址</a>
+                </div>
+            </div>
+            <div class="step-cont">
+                <div class="addr-detail">
+                    <span class="addr-name" limit="6">马云</span>
+
+
+                    <span class="addr-info" limit="45">北京 海淀区 三环到四环之间</span>
+
+                    <input type="hidden" form="form-order" name="rcvName" value="马云">
+                    <input type="hidden" form="form-order" name="addr" value="北京 海淀区 三环到四环之间">
+
+                    <span class="addr-tel">136****1379</span>
+                </div>
+            </div>
+            <div class="hr"></div>
+
+            <div class="step-tit">
+                <h3>支付方式</h3>
+            </div>
+            <div class="step-cont">
+                <ul class="payment-list">
+                    <li data-value="1" class="payment-item-selected"><b></b>货到付款</li>
+                    <li data-value="2"><b></b>支付宝支付</li>
+                    <li data-value="3"><b></b>在线支付</li>
+
+                    <input type="hidden" form="form-order" name="payment" value="1">
+
+                </ul>
+            </div>
+            <div class="hr"></div>
+
+            <div class="step-tit">
+                <h3>送货清单</h3>
+            </div>
+            <div class="step-cont">
+                <section class="shopping-list">
+                    <aside>
+                        <div class="mode-item-tit">
+                            <h4>配送方式</h4>
+                        </div>
+                        <div class="mode-tab-nav">
+                            <span class="m-txt">圆通快递<i class="qmark-icon qmark-tip"></i></span><b></b>
+                        </div>
+                        <div class="mode-list">
+                            <span class="mode-label ftx-03">标&nbsp;&nbsp;准&nbsp;&nbsp;达：</span>
+                            <br/>
+                            <div class="mode-infor">预计&nbsp;9月9日[周五]&nbsp;09:00-15:00&nbsp;送达</div>
+                        </div>
+                    </aside>
+                    <div class="goods-list">
+                        <div class="goods-tit">
+                            <h4 class="vendor_name_h" id="0">商家：自营</h4>
+                        </div>
+                        <div class="goods-items">
+                            <!--<div class="goods-item">
+                                <div class="p-img">
+                                    <a target="_blank" href=""><img src="images/phone/phone_01.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name">
+                                    <a href="" target="_blank">
+                                        小米 Note 全网通 白色 移动联通电信4G手机 双卡双待
+                                    </a>
+                                </div>
+                                <div class="p-price">
+                                    <strong class="jd-price">￥1199.00</strong>
+                                    <span class="p-num">x1</span>
+                                    <span class="p-state">有货</span>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="hr"></div>
+
+        </section>
+        <div class="trade-foot">
+            <div class="trade-foot-detail-com">
+                <div class="fc-price-info">
+                    <span class="price-tit">应付总额：</span>
+                    <span class="price-num" id="sum-price">￥224.00</span>
+
+                    <input type="hidden" form="form-order" name="price" value="224.00">
+
+                </div>
+                <div class="fc-consignee-info">
+                    <span class="mr20" id="sendAddr">寄送至： 北京 海淀区 三环到四环之间   太阳园小区4号楼101室</span>
+                    <span id="sendMobile">收货人：赵云 136****1379</span>
+                </div>
+            </div>
+
+            <div id="checkout-floatbar" class="group">
+                <div class="checkout-buttons">
+                    <button type="button" class="checkout-submit">
+                        提交订单<b></b>
+                    </button>
+                </div>
+                <span id="submit_message" style="display:none" class="submit-error"></span>
+
+                <div class="submit-check-info" id="submit_check_info_message" style="display:none"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--异步请求尾部-->
+<div id="footer"><img src="img/loading.gif"/></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/common.js"></script>
+<script src="js/addorder.js"></script>
+</body>
+</html>
